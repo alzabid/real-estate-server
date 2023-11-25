@@ -1,6 +1,6 @@
 
 
-const createToken = require("../../../lib/authentication/createToken");
+const createToken = require("../../../utils/createToken");
 
 const createAuthCookie = (req, res, next) => {
   try {

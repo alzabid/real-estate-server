@@ -1,4 +1,4 @@
-const createAuthCookie = require("./createAuthCookie")
-const logout = require("./logout")
+const createAuthCookie = require("./createAuthCookie");
+const logout = require("./logout");
 
-module.exports={createAuthCookie,logout}
+module.exports = { createAuthCookie, logout };

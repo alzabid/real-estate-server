@@ -1,4 +1,4 @@
-const Service = require("../../models/service");
+const Service = require("../../models/ServiceSchema");
 
 const findAllServices = async (filter) => {
   const query = {
