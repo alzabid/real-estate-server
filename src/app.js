@@ -3,6 +3,7 @@ const globalErrorHandler = require("./utils/globalErrorHandler");
 const applyMiddleware = require("./middlewares/applyMiddleware");
 const connectDB = require("./db/connectDB");
 const authRoutes = require("./routes/authRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 const serviceRouter = require("./routes/serviceRouter");
 const app = express();
 const port = process.env.PORT || 5000;
@@ -12,7 +13,7 @@ const port = process.env.PORT || 5000;
 applyMiddleware(app);
 
 app.use(authRoutes);
-
+app.use(adminRoutes);
 app.use(serviceRouter);
 
 
