@@ -6,6 +6,7 @@ const authRoutes = require("./routes/authRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const userRoutes = require("./routes/userRoutes");
 const PropertyRoutes = require("./routes/PropertyRoutes");
+const wishlistRoute = require("./routes/WishlistRoute");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -18,6 +19,7 @@ app.use(authRoutes);
 app.use(adminRoutes);
 app.use(userRoutes);
 app.use(PropertyRoutes);
+app.use(wishlistRoute)
 
 
 
