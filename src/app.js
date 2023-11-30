@@ -12,7 +12,7 @@ const offerRoutes = require("./routes/offerRoutes");
 const PaymentRoutes = require("./routes/PaymentRoutes");
 
 const app = express();
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 
 
 
@@ -44,11 +44,13 @@ app.all("*", (req, res, next) => {
 // error handling middleware
 app.use(globalErrorHandler);
 
-const main = async () => {
-  await connectDB();
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-};
+// const main = async () => {
+//   await connectDB();
+//   app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+//   });
+// };
 
-main();
+// main();
+
+module.exports = app
