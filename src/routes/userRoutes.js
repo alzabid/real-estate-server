@@ -38,24 +38,6 @@ router.patch("/health/user/:id", async (req, res) => {
   res.send(result);
 });
 
-
-
-
-
-// router.get("/health/user", async (req, res) => {
-//   const result = await UserSchema.find();
-//   res.send(result);
-// });
-
-
-// router.get("/health/user/:id", async (req, res) => {
-//   const id = req.params.id;
-//   const query = { _id: id };
-//   const result = await UserSchema.findById(query);
-//   res.send(result);
-// });
-
-
 router.delete("/health/user/:id", async (req, res) => {
   const id = req.params.id;
   const query = { _id: id };

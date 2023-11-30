@@ -1,7 +1,6 @@
-
+require("dotenv").config();
 
 const router = require("express").Router();
-
 const stripe = require("stripe")(process.env.STRIPE_TOKEN);
 router.post("/health/create-payment-intent", async (req, res) => {
   const price = req.body.price;
