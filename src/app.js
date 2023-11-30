@@ -8,6 +8,8 @@ const userRoutes = require("./routes/userRoutes");
 const PropertyRoutes = require("./routes/PropertyRoutes");
 const wishlistRoute = require("./routes/WishlistRoute");
 const reviewRoutes = require("./routes/reviewRoutes");
+const offerRoutes = require("./routes/offerRoutes");
+const PaymentRoutes = require("./routes/PaymentRoutes");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -22,6 +24,8 @@ app.use(userRoutes);
 app.use(PropertyRoutes);
 app.use(wishlistRoute)
 app.use(reviewRoutes)
+app.use(offerRoutes)
+app.use(PaymentRoutes)
 
 
 

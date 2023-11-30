@@ -14,6 +14,10 @@ const WishlishSchema = new Schema({
     type: String,
     required: true,
   },
+  agent_email: {
+    type: String,
+    required: true,
+  },
 
   agent_photoURL: {
     type: String,
@@ -29,7 +33,7 @@ const WishlishSchema = new Schema({
     required: true,
   },
   price: {
-    type: Number,
+    type: String,
     required: true,
   },
   photoURL: {
@@ -42,7 +46,6 @@ const WishlishSchema = new Schema({
   },
   status: {
     type: String,
-    
   },
 });
 

@@ -1,22 +1,21 @@
 const { model, Schema } = require("mongoose");
 
 const PropertySchema = new Schema({
-  
-  agent_email: {
+  email: {
     type: String,
     required: true,
   },
-  
+
   agent_name: {
     type: String,
     required: true,
   },
-  
+
   agent_photoURL: {
     type: String,
     required: true,
   },
-  
+
   title: {
     type: String,
     required: true,
@@ -26,7 +25,7 @@ const PropertySchema = new Schema({
     required: true,
   },
   price: {
-    type: Number,
+    type: String,
     required: true,
   },
   photoURL: {
@@ -36,6 +35,9 @@ const PropertySchema = new Schema({
   details: {
     type: String,
     required: true,
+  },
+  status: {
+    type: String,
   },
   // facility: [
   //   {
